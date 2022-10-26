@@ -1,0 +1,13 @@
+<h2>My Heroes</h2>
+
+<ul class="heroes">
+  <li *ngFor="let barco of barco">
+    <button [class.selected]="barco === selectedBarco" type="button" (click)="onSelect(barco)">
+      <span class="badge">{{barco.idBarco}}</span>
+      <span class="name">{{barco.nombre}}</span>       
+      
+    </button>
+  </li>
+</ul>
+
+<app-desc-barcos [barco]="selectedBarco"></app-desc-barcos>

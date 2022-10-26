@@ -1,16 +1,22 @@
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BarcosComponent } from './barcos/barcos.component';
+import { DescBarcosComponent } from './desc-barcos/desc-barcos.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    BarcosComponent,
+    DescBarcosComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
